@@ -53,8 +53,6 @@ body {
   padding: 94px 215px;
 }
 
-/* ======= Components ======= */
-
 /* =======Header======= */
 
 .header-icon {
@@ -171,7 +169,7 @@ a.logo-link {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 215px;
-  background-color: #2f303a;
+  background-color: #c4c4c4;
 }
 
 .hero-main {
@@ -230,6 +228,8 @@ a.logo-link {
 .nav-button:focus {
   color: #ffffff;
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
@@ -280,6 +280,11 @@ a.logo-link {
   width: 370px;
   background: #ffffff;
 }
+.products-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .border-cards {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -347,7 +352,7 @@ a.logo-link {
 }
 /* =======End Features======= */
 
-/* =======Чем мы занимаемся======= */
+/* =======Work======= */
 
 .section-work {
   padding-top: 0px;
@@ -367,7 +372,10 @@ a.logo-link {
   margin-top: 30px;
 }
 
+/* =======End Work======= */
+
 /* =======Team======= */
+
 .container-team-icon {
   display: flex;
   align-items: center;
@@ -459,7 +467,42 @@ a.logo-link {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 /* =======End Team======= */
+
+/* =======Customers======= */
+
+.section-customers {
+  padding: 94px 215px;
+}
+
+.list-customers {
+  display: flex;
+  align-items: center;
+}
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--accent-color);
+}
+.customers-link:hover > .customers-icon,
+.customers-link:focus > .customers-icon {
+  fill: var(--accent-color);
+}
+.customers-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+}
+
+/* =======End Customers======= */
 
 /* =======Footer======= */
 
@@ -471,6 +514,9 @@ a.logo-link {
 .container-footer {
   display: flex;
   flex-direction: column;
+}
+.section-footer-conteiner {
+  display: flex;
 }
 
 a .adress-list {
@@ -521,4 +567,45 @@ a .adress-list {
 .contakt-item {
   margin-bottom: 9px;
 }
+.footer-title {
+  padding-top: 12px;
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-icons {
+  margin-left: 70px;
+}
+.footer-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.footer-item-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-list-icon {
+  display: flex;
+}
+.footer-link-icon {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-item-icon:hover,
+.footer-item-icon:focus {
+  background-color: var(--accent-color);
+}
+
 /* =======End Footer======= */
